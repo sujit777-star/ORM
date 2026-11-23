@@ -23,12 +23,12 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-```from django.contrib import admin
+from django.contrib import admin
 from .models import Car,CarAdmin
 
-admin.site.register(Car, CarAdmin)```
+admin.site.register(Car, CarAdmin)
 
-```from django.db import models
+from django.db import models
 from django.contrib import admin
 
 class  Car(models.Model):
@@ -37,7 +37,7 @@ class  Car(models.Model):
     year = models.IntegerField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ('name', 'model', 'year', 'price')```
+    list_display = ('name', 'model', 'year', 'price')
 
 
 ## OUTPUT
